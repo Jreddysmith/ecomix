@@ -40,7 +40,7 @@ foreach($carts as $cart){
 					<center><a  class="title" href="/Books/viewBook/<?= $book['id'] ?>"><p><?= $book['title']?></a></p>
 					<p class="author">by <?=  $book['author'] ?></p></center>
 					<center><p class="price">Price: $<?= $book['price'] ?></p></center>
-					<center><a href="/Books/addBookFromHome/<?= $book['id'] ?>"><button>Add to Cart</button></center>
+					<center><a href="/Books/addBookFromHome/<?= $book['id'] ?>"><button>Add to Cart</button></a></center>
 				</div>
 <?php  	
 			}

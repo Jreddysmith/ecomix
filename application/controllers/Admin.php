@@ -42,7 +42,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     	$insert_book = $this->Bookadmin->insertBook($input);
 		$book_id = $insert_book['id'];
 		$this->img_upload($book_id);
-		$this->load->view('Admin');
+		redirect('Admin');
 	}
 
 	public function viewOrderById ($id) {
